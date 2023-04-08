@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    margin: 40px auto 0;
+}
+.first-person {
+    display: flex;
+    margin-bottom: 10px;
+}
+.second-person {
+    display: flex;
+    margin-bottom: 10px;
+}
+.person {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.info {
+    text-align: right;
+}
+.text {
+    width: calc(100% - 400px);
+    padding: 20px;
+}
+.first-person .text {
+    background-color: rgb(221, 107, 185);
+    border-radius: 20px 20px 20px 0;
+}
+.second-person .text {
+    background-color: rgb(88, 201, 215);
+    border-radius: 20px 20px 0 20px;
+}
+.second-person,
+.second-person .person {
+    flex-direction: row-reverse;
+}
+.second-person .info {
+    text-align: left;
+}
+.time {
+    color: rgb(135, 132, 132);
+}
